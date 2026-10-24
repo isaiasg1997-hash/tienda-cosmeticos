@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cosmética natural</title>
+<meta name="description" content="Cosmética para el cuidado de tu piel, con entregas a domicilio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+<div id="header"></div>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 data-marca="titulo"></h1>
+        <p class="lead" data-marca="bajada"></p>
+        <div class="hero-ctas">
+          <a href="#productos" class="btn">Ver productos</a>
+          <a href="#faq" class="btn btn--ghost">Cómo elegir mi rutina</a>
+        </div>
+        <ul class="trust" id="trust"></ul>
+      </div>
+      <div class="vessels" aria-hidden="true" id="heroVessels"></div>
+    </div>
+  </section>
+
+  <section class="block" id="productos">
+    <div class="wrap">
+      <div class="block-head">
+        <div><h2>Los favoritos</h2><p>Elige por necesidad o arma tu rutina completa con un pack.</p></div>
+        <div class="tabs" role="group" aria-label="Filtrar productos" id="tabs"></div>
+      </div>
+      <div class="grid" id="productGrid"><p>Cargando productos…</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="nosotras" style="padding-top:0">
+    <div class="wrap">
+      <div class="block-head"><div><h2>Por qué <span data-marca="nombre"></span></h2><p>Lo que nos diferencia de la cosmética convencional.</p></div></div>
+      <div class="compare-wrap">
+        <table class="compare">
+          <thead><tr><th scope="col"><span class="sr-only">Característica</span></th><th scope="col" class="us" data-marca="nombre"></th><th scope="col">Otras marcas</th></tr></thead>
+          <tbody id="compareBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="resenas" style="padding-top:0">
+    <div class="wrap">
+      <div class="block-head"><div><h2>Lo que dicen ellas</h2><p id="resumenResenas"></p></div></div>
+      <div class="reviews" id="reviews"></div>
+    </div>
+  </section>
+
+  <section class="block" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="block-head"><div><h2>Preguntas frecuentes</h2></div></div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+</main>
+<div id="footer"></div>
+<script src="/js/comun.js"></script>
+<script src="/js/inicio.js"></script>
+</body>
+</html>

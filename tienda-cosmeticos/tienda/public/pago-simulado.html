@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pago simulado</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+<main class="sim">
+  <div class="aviso-dev">Pasarela simulada para desarrollo. No se cobra nada.</div>
+  <h2 id="codigo">Pedido</h2>
+  <div class="monto" id="monto"></div>
+  <div class="acciones">
+    <a class="btn" id="ok">Aprobar pago</a>
+    <a class="btn btn--ghost" id="rech">Rechazar pago</a>
+    <a class="btn btn--ghost" id="canc">Cancelar y volver</a>
+  </div>
+</main>
+<script src="/js/simulado.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panel de administración</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- ============ LOGIN ============ -->
+<main id="login" class="login" hidden>
+  <form id="loginForm" class="login-card">
+    <h1>Panel de la tienda</h1>
+    <p>Ingresa con tu correo y contraseña.</p>
+    <label>Correo<input name="email" type="email" autocomplete="username" required></label>
+    <label>Contraseña<input name="clave" type="password" autocomplete="current-password" required></label>
+    <p class="error" id="loginError" role="alert"></p>
+    <button class="btn" type="submit">Ingresar</button>
+  </form>
+</main>
+
+<!-- ============ PANEL ============ -->
+<div id="app" class="app" hidden>
+  <aside class="side">
+    <div class="side-head"><span class="tienda-nombre" id="tiendaNombre">Tienda</span><a href="/" target="_blank" rel="noopener" class="ver-tienda">Ver tienda</a></div>
+    <nav id="nav">
+      <a href="#resumen">Resumen</a>
+      <a href="#pedidos">Pedidos <span class="pill" id="pillPedidos" hidden></span></a>
+      <a href="#productos">Productos</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#resenas">Reseñas <span class="pill" id="pillResenas" hidden></span></a>
+      <a href="#tienda">Datos de la tienda</a>
+    </nav>
+    <div class="side-foot"><span id="usuario"></span><button class="link" id="salir">Cerrar sesión</button></div>
+  </aside>
+  <main class="main" id="vista"></main>
+</div>
+
+<dialog id="dialogo" class="dialogo"><div id="dialogoBody"></div></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="/admin/admin.js"></script>
+</body>
+</html>

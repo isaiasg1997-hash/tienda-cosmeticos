@@ -1,0 +1,26 @@
+{
+  "name": "tienda-cosmeticos",
+  "version": "1.0.0",
+  "description": "Tienda e-commerce reutilizable: una instalación por cliente",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrar": "node scripts/migrar.js",
+    "migrar:demo": "node scripts/migrar.js --seed",
+    "admin": "node scripts/crear-admin.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.2.1",
+    "pg": "^8.23.1"
+  },
+  "engines": {
+    "node": ">=20 <25"
+  }
+}
